@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Max Abel Diogène SILLA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c5282, #1a365d);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 0.5rem;
+        }
+
+        .formation-item, .certificat-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill {
+            background: #2c5282;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .language {
+            background: #e2e8f0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        footer {
+            background: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-img">
+            <img src="images/photo.jpg" alt="Photo de Max Abel Diogène SILLA">
+        </div>
+        <h1>Max Abel Diogène SILLA</h1>
+        <p>Manager Agrobusiness Junior</p>
+        <div class="contact-info">
+            <span class="contact-item">📧 maxabelsilla@gmail.com</span>
+            <span class="contact-item">📱 00221 77 4386925</span>
+            <span class="contact-item">📍 Rue GY-147,160 Scat Urbam Dakar</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="profile">
+            <h2>Profil</h2>
+            <p>Dotée de la capacité d'apprendre et d'assimiler rapidement, j'aime redonner et aider les autres. Je combats le stress avec la musique et la méditation, je pousse mes capacités physiques et mentales à travers le sport et les échecs. Mon passage au Prytanée Militaire de Saint-Louis m'a inculqué des valeurs nobles, l'étique du travail et des compétences en leadership qui ont fait de moi un chef d'équipe dans presque tous mes projets de groupe. Passionné de marketing agroalimentaire, de production musicale et de gestion de projets, j'apprends au jour le jour dans l'optique de devenir un expert dans mon domaine.</p>
+        </section>
+
+        <section id="formation">
+            <h2>Formation</h2>
+            <div class="formation-item">
+                <h3>Master 2 en Management Agrobusiness</h3>
+                <p class="date">octobre 2021 - juillet 2023</p>
+                <p>Groupe(ISM) Institut Supérieur de Management, Dakar</p>
+            </div>
+            <div class="formation-item">
+                <h3>Bachelor in Business Administration - Option Marketing</h3>
+                <p class="date">octobre 2018 - août 2021</p>
+                <p>Groupe (IAM) Institut Africain de Management, Dakar</p>
+            </div>
+        </section>
+
+        <section id="certificats">
+            <h2>Certificats</h2>
+            <div class="certificat-item">
+                <h3>Brevet de Préparation Militaire Supérieure</h3>
+                <p class="date">juin 2016</p>
+            </div>
+            <div class="certificat-item">
+                <h3>Brevet de Préparation Militaire Élémentaire</h3>
+                <p class="date">juin 2014</p>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences Informatiques</h2>
+            <div class="skills">
+                <span class="skill">MS WORDS</span>
+                <span class="skill">MS POWERPOINT</span>
+                <span class="skill">LOGICIEL SPHINX</span>
+                <span class="skill">MS EXCEL</span>
+                <span class="skill">CANVA</span>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Soft Skills / Hard Skills</h2>
+            <div class="skills">
+                <span class="skill">Innovateur</span>
+                <span class="skill">Leadership</span>
+                <span class="skill">Ponctuel</span>
+                <span class="skill">Flexible</span>
+            </div>
+        </section>
+
+        <section id="langues">
+            <h2>Langues</h2>
+            <div class="languages">
+                <div class="language">Français</div>
+                <div class="language">Anglais</div>
+                <div class="language">Wolof</div>
+            </div>
+        </section>
+
+        <section id="interets">
+            <h2>Centres d'intérêt</h2>
+            <div class="skills">
+                <span class="skill">Musique</span>
+                <span class="skill">Entreprenariat</span>
+                <span class="skill">Lecture</span>
+                <span class="skill">Sports</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Max Abel Diogène SILLA - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
